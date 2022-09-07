@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:// :3306/ ?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username:
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update # disable DB schema creation from entity
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect # ??
+    show-sql: true
